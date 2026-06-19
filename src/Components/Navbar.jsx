@@ -33,9 +33,9 @@ const Navbar = () => {
             <img className={`${showMenu ? "rotate-180" : ""} transition max-[600px]:h-4   max-[600px]:w-4`} src={caret} alt="" />
           </div>
           {showMenu && (
-            <div className='absolute right-0 top-12 bg-black text-white w-32 py-3 rounded-md shadow-lg'>
+            <div className='absolute right-0 top-12 bg-black text-white w-32 py-3 rounded-md shadow-lg max-[600px]:w-20 max-[600px]:py-2 max-[600px]:top-8 max-[410px]:w-15 max-[450px]:py-1 max-[450px]:top-6'>
 
-              <button onClick={()=>{logout()}} className='w-full hover:bg-gray-800 py-2'>
+              <button onClick={()=>{logout()}} className='w-full hover:bg-gray-800 py-2 max-[600px]:py-1 max-[450px]:py-0'>
                 Logout
               </button>
             </div>
